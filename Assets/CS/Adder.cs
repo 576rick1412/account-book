@@ -207,6 +207,7 @@ public class Adder : MonoBehaviour
     public void InsertFE() // FE 타이틀 입력 후 고정지출 리스트에 값 삽입
     {
         GameManager.GM.InsertFEL( feTitleInputfield.text, int.Parse(inputValues[0].ToString()) );
+        feTitleInputfield.text = string.Empty;
     }
 
     // =========================================================

@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour
         // 숫자가 0 이하일 경우 -1을 곱해서 양수로 만듦
         if(money < 0) money = money * (-1);
 
-        FE_ListClass tempFE = new FE_ListClass(title,money);
-        myFixedExpenses.Add(tempFE);
+        new FE_ListClass(title,money);
     }
 }
